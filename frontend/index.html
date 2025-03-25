@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="image/iconmonstr-chart-3-240.png">
+</head>
+<body>
+    <!-- <h1>Product List</h1> -->
+    <div class="main">
+        <div class="container">
+            <div id="search-container">
+                <!-- <label for="search-query">Search:</label> -->
+                <input type="text" id="search-query" placeholder="Enter product name">
+            </div>
+            <button id="search-button">Search</button>
+        </div>
+        <div id="loading-indicator" class="loading" style="display: none;">Searching...</div>
+        <div id="sort-container">
+            <!-- <label for="sort-options">Sort by:</label> -->
+            <select id="sort-options">
+                <!-- <option value="relevance">Relevance</option> -->
+                <option value="price">Price</option>
+                <option value="rating_count">Rating Count</option>
+                <option value="avg_rating">Average Rating</option>
+                <!-- <option value="product_name">Product Name</option> -->
+            </select>
+        </div>
+        <div id="product-list"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
